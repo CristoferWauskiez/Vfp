@@ -1,0 +1,591 @@
+<?xml version = "1.0" encoding="UTF-8" standalone="yes"?>
+<VFPData>
+	<record>
+		<platform>COMMENT</platform>
+		<uniqueid>Screen</uniqueid>
+		<timestamp>0</timestamp>
+		<class/>
+		<classloc/>
+		<baseclass/>
+		<objname/>
+		<parent/>
+		<properties/>
+		<protected/>
+		<methods/>
+		<objcode/>
+		<ole/>
+		<ole2/>
+		<reserved1>VERSION =   3.00</reserved1>
+		<reserved2/>
+		<reserved3/>
+		<reserved4/>
+		<reserved5/>
+		<reserved6/>
+		<reserved7/>
+		<reserved8/>
+		<user/>
+	</record>
+	<record>
+		<platform>WINDOWS</platform>
+		<uniqueid>_3U2107GUV</uniqueid>
+		<timestamp>1123190450</timestamp>
+		<class>dataenvironment</class>
+		<classloc/>
+		<baseclass>dataenvironment</baseclass>
+		<objname>Dataenvironment</objname>
+		<parent/>
+		<properties>Top = 0
+Left = 0
+Width = 0
+Height = 0
+DataSource = .NULL.
+Name = "Dataenvironment"
+</properties>
+		<protected/>
+		<methods/>
+		<objcode/>
+		<ole/>
+		<ole2/>
+		<reserved1/>
+		<reserved2>1</reserved2>
+		<reserved3/>
+		<reserved4>1</reserved4>
+		<reserved5/>
+		<reserved6/>
+		<reserved7/>
+		<reserved8/>
+		<user/>
+	</record>
+	<record>
+		<platform>WINDOWS</platform>
+		<uniqueid>_3U2107GUW</uniqueid>
+		<timestamp>1123222115</timestamp>
+		<class>form</class>
+		<classloc/>
+		<baseclass>form</baseclass>
+		<objname>fci</objname>
+		<parent/>
+		<properties>Height = 677
+Width = 819
+DoCreate = .T.
+AutoCenter = .T.
+BorderStyle = 0
+Caption = "FCI - Rotina completa"
+FontName = "Verdana"
+FontSize = 8
+MaxButton = .F.
+MinButton = .F.
+BackColor = 255,255,255
+BindControls = .T.
+chaveanterior = 
+Name = "fci"
+</properties>
+		<protected/>
+		<methods>PROCEDURE Init
+
+
+ENDPROC
+PROCEDURE Load
+create cursor curArvore (Ordem int, chavepai c(10), chave c(10), descricao c(200), cor c(10), texto memo)
+index on chave tag "indice" additive
+
+
+
+
+
+ENDPROC
+PROCEDURE Unload
+CLEAR EVENTS
+ENDPROC
+</methods>
+		<objcode/>
+		<ole/>
+		<ole2/>
+		<reserved1/>
+		<reserved2/>
+		<reserved3>chaveanterior
+</reserved3>
+		<reserved4/>
+		<reserved5/>
+		<reserved6/>
+		<reserved7/>
+		<reserved8/>
+		<user/>
+	</record>
+	<record>
+		<platform>WINDOWS</platform>
+		<uniqueid>_3U2107GUX</uniqueid>
+		<timestamp>1123221621</timestamp>
+		<class>olecontrol</class>
+		<classloc/>
+		<baseclass>olecontrol</baseclass>
+		<objname>Arvore</objname>
+		<parent>fci</parent>
+		<properties>Top = 1
+Left = 1
+Height = 467
+Width = 732
+Name = "Arvore"
+</properties>
+		<protected/>
+		<methods>PROCEDURE Click
+*** ActiveX Control Event ***
+
+ENDPROC
+PROCEDURE NodeCheck
+*** ActiveX Control Event ***
+LPARAMETERS node
+
+
+
+ENDPROC
+PROCEDURE NodeClick
+lparameters node
+
+local lcChave
+
+lcChave = node.key
+
+if !empty(Thisform.chaveanterior)
+if seek(Thisform.chaveanterior,"curArvore","indice")
+replace texto with alltrim(Thisform.texto.Value) IN curArvore
+endif
+endif
+
+if seek(lcChave,"curArvore","indice")
+Thisform.texto.Value = alltrim(curArvore.texto)
+endif
+
+thisform.chaveanterior = lcChave
+ENDPROC
+</methods>
+		<objcode/>
+		<ole>0M8R4KGxGuEAAAAAAAAAAAAAAAAAAAAAPgADAP7/CQAGAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAAEAAAAgAAAAEAAAD+////AAAAAAAAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////9/////v////7////+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////1IAbwBvAHQAIABFAG4AdAByAHkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWAAUA//////////8BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAICjY7kuhM4BAwAAAAACAAAAAAAAAwBPAGwAZQBPAGIAagBlAGMAdABEAGEAdABhAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4AAgEDAAAAAgAAAP////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAagAAAAAAAAADAEEAYwBjAGUAcwBzAE8AYgBqAFMAaQB0AGUARABhAHQAYQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJgACAP///////////////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAABcAAAAAAAAAAMAQwBoAGEAbgBnAGUAZABQAHIAbwBwAHMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcAAIA////////////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAPIAAAAAAAAABgAAAAIAAAD+////BAAAAAUAAAAHAAAA/v////7///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+2kEHHiYXREbFqAMDwKDYoIUM0EggAAACoSwAARDAAALE8wWoBAAYAIgAAAL0AAACVAgAACAAAAAEAAAAB782rXAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAACQAAAA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA5MzY4MjY1RS04NUZFLTExZDEtOEJFMy0wMDAwRjg3NTREQTEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAACADgAAAEhpZGVTZWxlY3Rpb24ABQAAAEwBAAAADAAAAEluZGVudGF0aW9uABEAAABODQAAAAcAAAAAAAAAAAA5QAoAAABMYWJlbEVkaXQACQAAAEkKAAAAAQAAAAoAAABMaW5lU3R5bGUACQAAAEkKAAAAAQAAAA0AAABNb3VzZVBvaW50ZXIACQAAAEkKAAAAAAAAAA4AAABQYXRoU2VwYXJhdG9yAAoAAABIAAAAAAEAAABcDAAAAE9MRUQAAAUAcL8IBgYAAAAAAAAABQAAgOjpGAABAAAAXAAf3uy9AQAFADDqGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcmFnTW9kZQAJAAAASQoAAAAAAAAADAAAAE9MRURyb3BNb2RlAAkAAABJCgAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</ole>
+		<ole2>OLEObject = C:\Windows\SysWow64\mscomctl.ocx
+</ole2>
+		<reserved1/>
+		<reserved2/>
+		<reserved3/>
+		<reserved4/>
+		<reserved5/>
+		<reserved6/>
+		<reserved7/>
+		<reserved8/>
+		<user/>
+	</record>
+	<record>
+		<platform>WINDOWS</platform>
+		<uniqueid>_3U2107GUV</uniqueid>
+		<timestamp>1123221805</timestamp>
+		<class>commandbutton</class>
+		<classloc/>
+		<baseclass>commandbutton</baseclass>
+		<objname>btNovo</objname>
+		<parent>fci</parent>
+		<properties>Top = 6
+Left = 737
+Height = 27
+Width = 78
+FontBold = .F.
+FontName = "Verdana"
+FontSize = 8
+Caption = "NOVO"
+ForeColor = 255,255,255
+BackColor = 0,0,0
+Name = "btNovo"
+</properties>
+		<protected/>
+		<methods>PROCEDURE Click
+local loNodo
+
+lcDescricao = alltrim(inputbox("Descrição:","FCI",""))
+loNodo      = Thisform.arvore.selectedItem
+lcChave     = sys(2015)
+lcKeyPai    = ""
+
+if empty(lcDescricao)
+return
+endif
+
+if isnull(loNodo)
+Thisform.arvore.nodes.Add(,1,lcChave,lcDescricao,0)
+else
+lcKeyPai = loNodo.key
+Thisform.arvore.nodes.Add(lcKeyPai,4,lcChave,lcDescricao,0)
+endif
+
+select curArvore
+set order to
+go bottom
+
+lnOrdem = nvl(curArvore.ordem,0) + 1
+
+insert into curArvore values (lnOrdem, lcKeyPai, lcChave, lcDescricao, "0,0,0", "")
+ENDPROC
+</methods>
+		<objcode/>
+		<ole/>
+		<ole2/>
+		<reserved1/>
+		<reserved2/>
+		<reserved3/>
+		<reserved4/>
+		<reserved5/>
+		<reserved6/>
+		<reserved7/>
+		<reserved8/>
+		<user/>
+	</record>
+	<record>
+		<platform>WINDOWS</platform>
+		<uniqueid>_3U2107GUZ</uniqueid>
+		<timestamp>1123222023</timestamp>
+		<class>editbox</class>
+		<classloc/>
+		<baseclass>editbox</baseclass>
+		<objname>texto</objname>
+		<parent>fci</parent>
+		<properties>FontName = "Verdana"
+FontSize = 8
+Height = 205
+Left = 0
+Top = 468
+Width = 734
+ControlSource = ""
+Themes = .F.
+Name = "texto"
+</properties>
+		<protected/>
+		<methods/>
+		<objcode/>
+		<ole/>
+		<ole2/>
+		<reserved1/>
+		<reserved2/>
+		<reserved3/>
+		<reserved4/>
+		<reserved5/>
+		<reserved6/>
+		<reserved7/>
+		<reserved8/>
+		<user/>
+	</record>
+	<record>
+		<platform>WINDOWS</platform>
+		<uniqueid>_3U2107GUV</uniqueid>
+		<timestamp>1123221805</timestamp>
+		<class>commandbutton</class>
+		<classloc/>
+		<baseclass>commandbutton</baseclass>
+		<objname>btRemove</objname>
+		<parent>fci</parent>
+		<properties>Top = 33
+Left = 737
+Height = 27
+Width = 78
+FontBold = .F.
+FontName = "Verdana"
+FontSize = 8
+Caption = "EXCLUIR"
+ForeColor = 255,255,255
+BackColor = 0,0,0
+Name = "btRemove"
+</properties>
+		<protected/>
+		<methods>PROCEDURE Click
+local lnIndice, lcChave
+
+lnIndice = iif(type("Thisform.arvore.selectedItem.Index") &lt;&gt; "U", Thisform.arvore.selectedItem.Index, 0)
+
+if lnIndice &gt; 0
+lcChave = Thisform.arvore.selectedItem.Key
+delete from curArvore where chave == lcChave
+Thisform.arvore.nodes.Remove(lnIndice)
+endif
+
+
+ENDPROC
+</methods>
+		<objcode/>
+		<ole/>
+		<ole2/>
+		<reserved1/>
+		<reserved2/>
+		<reserved3/>
+		<reserved4/>
+		<reserved5/>
+		<reserved6/>
+		<reserved7/>
+		<reserved8/>
+		<user/>
+	</record>
+	<record>
+		<platform>WINDOWS</platform>
+		<uniqueid>_3U2107GUV</uniqueid>
+		<timestamp>1123221805</timestamp>
+		<class>commandbutton</class>
+		<classloc/>
+		<baseclass>commandbutton</baseclass>
+		<objname>btVermelho</objname>
+		<parent>fci</parent>
+		<properties>Top = 61
+Left = 737
+Height = 27
+Width = 78
+FontBold = .F.
+FontName = "Verdana"
+FontSize = 8
+Caption = "VERMELHO"
+ForeColor = 255,255,255
+BackColor = 0,0,0
+Name = "btVermelho"
+</properties>
+		<protected/>
+		<methods>PROCEDURE Click
+local loNodo
+
+loNodo  = Thisform.arvore.selectedItem
+
+if isnull(loNodo)
+return
+endif
+
+loNodo.ForeColor = RGB(128,0,0)
+
+
+
+
+
+ENDPROC
+</methods>
+		<objcode/>
+		<ole/>
+		<ole2/>
+		<reserved1/>
+		<reserved2/>
+		<reserved3/>
+		<reserved4/>
+		<reserved5/>
+		<reserved6/>
+		<reserved7/>
+		<reserved8/>
+		<user/>
+	</record>
+	<record>
+		<platform>WINDOWS</platform>
+		<uniqueid>_3U2107GUV</uniqueid>
+		<timestamp>1123221805</timestamp>
+		<class>commandbutton</class>
+		<classloc/>
+		<baseclass>commandbutton</baseclass>
+		<objname>btVerde</objname>
+		<parent>fci</parent>
+		<properties>Top = 88
+Left = 737
+Height = 27
+Width = 78
+FontBold = .F.
+FontName = "Verdana"
+FontSize = 8
+Caption = "VERDE"
+ForeColor = 255,255,255
+BackColor = 0,0,0
+Name = "btVerde"
+</properties>
+		<protected/>
+		<methods>PROCEDURE Click
+local loNodo
+
+loNodo  = Thisform.arvore.selectedItem
+
+if isnull(loNodo)
+return
+endif
+
+loNodo.ForeColor = RGB(0,128,128)
+
+
+
+
+
+ENDPROC
+</methods>
+		<objcode/>
+		<ole/>
+		<ole2/>
+		<reserved1/>
+		<reserved2/>
+		<reserved3/>
+		<reserved4/>
+		<reserved5/>
+		<reserved6/>
+		<reserved7/>
+		<reserved8/>
+		<user/>
+	</record>
+	<record>
+		<platform>WINDOWS</platform>
+		<uniqueid>_3U2107GUV</uniqueid>
+		<timestamp>1123222115</timestamp>
+		<class>commandbutton</class>
+		<classloc/>
+		<baseclass>commandbutton</baseclass>
+		<objname>btImportar</objname>
+		<parent>fci</parent>
+		<properties>Top = 132
+Left = 737
+Height = 27
+Width = 78
+FontBold = .F.
+FontName = "Verdana"
+FontSize = 8
+Caption = "IMPORTAR"
+ForeColor = 255,255,255
+BackColor = 0,0,0
+Name = "btImportar"
+</properties>
+		<protected/>
+		<methods>PROCEDURE Click
+local lcArquivo
+
+lcArquivo = getfile("DBF","","",0,"Importar Tabela")
+
+if !file(lcArquivo)
+messagebox("Tabela não encontrado!",48,"")
+return
+endif
+
+use (lcArquivo) in 0 alias "curArquivo"
+
+if !used("curArquivo")
+messagebox("Tabela não encontrado!",48,"")
+return
+endif
+
+select * from curArquivo order by ordem into cursor curArvore readwrite
+
+thisform.arvore.nodes.Clear
+
+select curArvore
+scan
+lcDescricao = ALLTRIM(curArvore.descricao)
+lcChave     = ALLTRIM(curArvore.chave)
+lcKeyPai    = ALLTRIM(curArvore.chavepai)
+
+if empty(lcKeyPai)
+Thisform.arvore.nodes.Add(,1,lcChave,lcDescricao,0)
+else
+Thisform.arvore.nodes.Add(lcKeyPai,4,lcChave,lcDescricao,0)
+endif
+endscan
+
+select curArvore
+index on chave tag "indice" additive
+
+use in curArquivo
+
+Thisform.chaveanterior = ""
+ENDPROC
+</methods>
+		<objcode/>
+		<ole/>
+		<ole2/>
+		<reserved1/>
+		<reserved2/>
+		<reserved3/>
+		<reserved4/>
+		<reserved5/>
+		<reserved6/>
+		<reserved7/>
+		<reserved8/>
+		<user/>
+	</record>
+	<record>
+		<platform>WINDOWS</platform>
+		<uniqueid>_3U212GRE7</uniqueid>
+		<timestamp>1123221805</timestamp>
+		<class>commandbutton</class>
+		<classloc/>
+		<baseclass>commandbutton</baseclass>
+		<objname>btSalvar</objname>
+		<parent>fci</parent>
+		<properties>Top = 160
+Left = 737
+Height = 27
+Width = 78
+FontBold = .F.
+FontName = "Verdana"
+FontSize = 8
+Caption = "SALVAR"
+ForeColor = 255,255,255
+BackColor = 0,0,0
+Name = "btSalvar"
+</properties>
+		<protected/>
+		<methods>PROCEDURE Click
+local lcDestino
+
+lcDestino = putfile("","FCI.DBF","DBF")
+
+if empty(lcDestino)
+messagebox("Não foi possivel salvar o arquivo!",48,"")
+return
+endif
+
+if !empty(Thisform.chaveanterior) AND !EMPTY(Thisform.texto.Value)
+if seek(Thisform.chaveanterior,"curArvore","indice")
+replace texto with alltrim(Thisform.texto.Value) IN curArvore
+endif
+endif
+
+select * from curArvore into table (lcDestino)
+
+use in (alias())
+
+Thisform.chaveanterior = ""
+
+SELECT curArvore
+SET ORDER TO INDICE   &amp;&amp; CHAVE
+
+ENDPROC
+</methods>
+		<objcode/>
+		<ole/>
+		<ole2/>
+		<reserved1/>
+		<reserved2/>
+		<reserved3/>
+		<reserved4/>
+		<reserved5/>
+		<reserved6/>
+		<reserved7/>
+		<reserved8/>
+		<user/>
+	</record>
+	<record>
+		<platform>COMMENT</platform>
+		<uniqueid>RESERVED</uniqueid>
+		<timestamp>0</timestamp>
+		<class/>
+		<classloc/>
+		<baseclass/>
+		<objname/>
+		<parent/>
+		<properties>Verdana, 0, 8, 6, 13, 11, 22, 2, 0
+</properties>
+		<protected/>
+		<methods/>
+		<objcode/>
+		<ole/>
+		<ole2/>
+		<reserved1/>
+		<reserved2/>
+		<reserved3/>
+		<reserved4/>
+		<reserved5/>
+		<reserved6/>
+		<reserved7/>
+		<reserved8/>
+		<user/>
+	</record>
+</VFPData>
