@@ -1,0 +1,11 @@
+_screen.Caption = "FCI"
+_screen.WindowState = 2 
+
+SET SYSMENU OFF 
+
+ON SHUTDOWN QUIT
+
+DO FORM FCI
+
+READ EVENTS
+ 
