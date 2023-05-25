@@ -59,7 +59,7 @@ Name = "Dataenvironment"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_1RG0Y51Q0</uniqueid>
-		<timestamp>1420594785</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>formpadrao</class>
 		<classloc>..\classes\formularios.vcx</classloc>
 		<baseclass>form</baseclass>
@@ -3050,7 +3050,8 @@ Thisform.CamposProd = [Ordem_Estocagem, id, codigo,Nome, preco_compra, preco_ven
 [ 0000000.00 as qtd_vendas_m4,]+;
 [ 0000000.00 as volume, 0000000000 as promo,]+; &amp;&amp; Cristof #69129  04/06/19: Adicionado o volume das unidades para calcular a litragem
 [ 0000000.00 as totalPedido, ]+; &amp;&amp; Matheus #72517  28/01/20: Totalizador da coluna pedido 1 pedido 2 e pedido 3.
-[ 0000000.00 as saldo_emprestimo ] &amp;&amp; Gabriel #82923  31/03/21: Total de saldo de emprestimos para outras lojas
+[ 0000000.00 as saldo_emprestimo, ]+; &amp;&amp; Gabriel #82923  31/03/21: Total de saldo de emprestimos para outras lojas
+[ 'teste' as teste]
 
 lcCampos = Thisform.CamposProd
 Select &amp;lcCampos ;
@@ -3310,7 +3311,7 @@ utilizapedidoduaslojas
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_24N0ZSB3A</uniqueid>
-		<timestamp>1420594785</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>pageframe_</class>
 		<classloc>..\classes\objetos.vcx</classloc>
 		<baseclass>pageframe</baseclass>
@@ -3386,7 +3387,7 @@ Name = "Shape_1"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_24N10FE96</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>commandbutton_</class>
 		<classloc>..\classes\objetos.vcx</classloc>
 		<baseclass>commandbutton</baseclass>
@@ -3512,7 +3513,7 @@ Name = "Shape_2"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_24O0XPOZO</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>optiongroup_</class>
 		<classloc>..\classes\objetos.vcx</classloc>
 		<baseclass>optiongroup</baseclass>
@@ -3823,7 +3824,7 @@ Name = "Label_13"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_24N10FE9D</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>cntperiodo2</class>
 		<classloc>..\classes\calendario.vcx</classloc>
 		<baseclass>container</baseclass>
@@ -3938,7 +3939,7 @@ Name = "chkPontaEstoque"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_54J0MV4VH</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>checkbox_</class>
 		<classloc>..\classes\objetos.vcx</classloc>
 		<baseclass>checkbox</baseclass>
@@ -4085,7 +4086,7 @@ Name = "chkfiliais"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_1RG0Y51PZ</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>checkbox_</class>
 		<classloc>..\classes\objetos.vcx</classloc>
 		<baseclass>checkbox</baseclass>
@@ -4131,7 +4132,7 @@ ENDPROC
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_24N10FE92</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>textbox_</class>
 		<classloc>..\classes\objetos.vcx</classloc>
 		<baseclass>textbox</baseclass>
@@ -4269,7 +4270,7 @@ Name = "lblQtd"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_24P0MDTIB</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>label_</class>
 		<classloc>..\classes\objetos.vcx</classloc>
 		<baseclass>label</baseclass>
@@ -4417,7 +4418,7 @@ txtId.Name = "txtId"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_24N10FE9C</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>cntseekfornec</class>
 		<classloc>..\classes\caixasselecao.vcx</classloc>
 		<baseclass>container</baseclass>
@@ -4535,7 +4536,7 @@ Name = "Label_9"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_24O0VYG9B</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>cmdsair</class>
 		<classloc>..\classes\botoes.vcx</classloc>
 		<baseclass>commandbutton</baseclass>
@@ -4736,7 +4737,7 @@ Name = "Label_3"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_24O0XZ1RV</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>spinner_</class>
 		<classloc>..\classes\objetos.vcx</classloc>
 		<baseclass>spinner</baseclass>
@@ -4774,7 +4775,7 @@ ENDPROC
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_2NW157253</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>cbolojas</class>
 		<classloc>..\classes\tools.vcx</classloc>
 		<baseclass>combobox</baseclass>
@@ -4948,7 +4949,7 @@ Name = "Label_7"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_54J0MV4VI</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>checkbox_</class>
 		<classloc>..\classes\objetos.vcx</classloc>
 		<baseclass>checkbox</baseclass>
@@ -5064,7 +5065,7 @@ ENDPROC
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_1RG0Y51PZ</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>checkbox_</class>
 		<classloc>..\classes\objetos.vcx</classloc>
 		<baseclass>checkbox</baseclass>
@@ -5107,7 +5108,7 @@ ENDPROC
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_57T0JFN41</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>checkbox_</class>
 		<classloc>..\classes\objetos.vcx</classloc>
 		<baseclass>checkbox</baseclass>
@@ -5264,7 +5265,7 @@ Name = "Label_8"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_4YV0KXN1A</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>label_</class>
 		<classloc>..\classes\objetos.vcx</classloc>
 		<baseclass>label</baseclass>
@@ -5375,7 +5376,7 @@ Name = "chkEmprestimos"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_6BW0W9JID</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>cbomultiselecao_</class>
 		<classloc>..\classes\objetos.vcx</classloc>
 		<baseclass>combobox</baseclass>
@@ -6371,7 +6372,7 @@ Name = "Text1"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_41E0JCDAN</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>label_shape</class>
 		<classloc>..\classes\objetos.vcx</classloc>
 		<baseclass>label</baseclass>
@@ -6508,7 +6509,7 @@ Name = "Shape_1"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_24N10FEA5</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>textbox_</class>
 		<classloc>..\classes\objetos.vcx</classloc>
 		<baseclass>textbox</baseclass>
@@ -6549,13 +6550,13 @@ ENDPROC
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_1RG0Y51PZ</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>inteligrid</class>
 		<classloc>..\classes\inteligrid.vcx</classloc>
 		<baseclass>grid</baseclass>
 		<objname>gridorder1</objname>
 		<parent>FRMCOMPRAS_PEDIDO_ANALISE.pageframe.Page2</parent>
-		<properties>ColumnCount = 96
+		<properties>ColumnCount = 97
 HeaderHeight = 31
 Height = 280
 Left = 4
@@ -7532,6 +7533,8 @@ Intelicolumn96.Width = 223
 Intelicolumn96.ReadOnly = .T.
 Intelicolumn96.ForeColor = 70,70,70
 Intelicolumn96.Name = "Intelicolumn96"
+Intelicolumn97.ControlSource = "curListaProd.teste"
+Intelicolumn97.Name = "Intelicolumn97"
 </properties>
 		<protected/>
 		<methods>PROCEDURE AfterRowColChange
@@ -7985,7 +7988,7 @@ Name = "Inteliheader1"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_1X80OFBRX</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>txtinteligrid</class>
 		<classloc>..\classes\inteligrid.vcx</classloc>
 		<baseclass>textbox</baseclass>
@@ -8055,7 +8058,7 @@ Name = "Inteliheader1"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_1RG0Y51PZ</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>textbox</class>
 		<classloc/>
 		<baseclass>textbox</baseclass>
@@ -8134,7 +8137,7 @@ Name = "Inteliheader1"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_1RH0YYPHZ</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>textbox</class>
 		<classloc/>
 		<baseclass>textbox</baseclass>
@@ -8208,7 +8211,7 @@ Name = "Inteliheader1"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_1Y40XZRWE</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>txtinteligrid</class>
 		<classloc>..\classes\inteligrid.vcx</classloc>
 		<baseclass>textbox</baseclass>
@@ -8339,7 +8342,7 @@ Name = "Inteliheader1"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_1X80T2XFP</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>txtinteligrid</class>
 		<classloc>..\classes\inteligrid.vcx</classloc>
 		<baseclass>textbox</baseclass>
@@ -8431,7 +8434,7 @@ Name = "Text1"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_1RG0Y51Q6</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>inteliheader</class>
 		<classloc/>
 		<baseclass>header</baseclass>
@@ -8464,7 +8467,7 @@ ENDPROC
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_1RG0Y51Q7</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>txtinteligrid</class>
 		<classloc>..\classes\inteligrid.vcx</classloc>
 		<baseclass>textbox</baseclass>
@@ -8708,7 +8711,7 @@ Name = "Inteliheader1"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_1X80T2XFU</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>txtinteligrid</class>
 		<classloc>..\classes\inteligrid.vcx</classloc>
 		<baseclass>textbox</baseclass>
@@ -8768,7 +8771,7 @@ Name = "Inteliheader1"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_1X80T2XFV</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>txtinteligrid</class>
 		<classloc>..\classes\inteligrid.vcx</classloc>
 		<baseclass>textbox</baseclass>
@@ -8946,7 +8949,7 @@ Name = "Inteliheader1"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_26H0XRYM4</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>txtinteligrid</class>
 		<classloc>..\classes\inteligrid.vcx</classloc>
 		<baseclass>textbox</baseclass>
@@ -9014,7 +9017,7 @@ Name = "Inteliheader1"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_2PJ0T1DKE</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>textbox_</class>
 		<classloc>..\classes\objetos.vcx</classloc>
 		<baseclass>textbox</baseclass>
@@ -9134,7 +9137,7 @@ Name = "Inteliheader1"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_2PJ0TAG6F</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>textbox_</class>
 		<classloc>..\classes\objetos.vcx</classloc>
 		<baseclass>textbox</baseclass>
@@ -9239,7 +9242,7 @@ Name = "Inteliheader1"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_2YD0P71HU</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>textbox_</class>
 		<classloc>..\classes\objetos.vcx</classloc>
 		<baseclass>textbox</baseclass>
@@ -9343,7 +9346,7 @@ Name = "Inteliheader1"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_2YD0P71HV</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>textbox_</class>
 		<classloc>..\classes\objetos.vcx</classloc>
 		<baseclass>textbox</baseclass>
@@ -9447,7 +9450,7 @@ Name = "Inteliheader1"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_42A0MSOOU</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>textbox_</class>
 		<classloc>..\classes\objetos.vcx</classloc>
 		<baseclass>textbox</baseclass>
@@ -9995,7 +9998,7 @@ Name = "Text1"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_3JU0OGJFE</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>inteliheader</class>
 		<classloc/>
 		<baseclass>header</baseclass>
@@ -10624,7 +10627,7 @@ Name = "Inteliheader1"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_4DF0QGVD9</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>txtinteligrid</class>
 		<classloc>..\classes\inteligrid.vcx</classloc>
 		<baseclass>textbox</baseclass>
@@ -10862,7 +10865,7 @@ Name = "Inteliheader1"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_4F00UCHHS</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>txtinteligrid</class>
 		<classloc>..\classes\inteligrid.vcx</classloc>
 		<baseclass>textbox</baseclass>
@@ -10947,7 +10950,7 @@ Name = "Inteliheader1"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_4F00V1ZEM</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>txtinteligrid</class>
 		<classloc>..\classes\inteligrid.vcx</classloc>
 		<baseclass>textbox</baseclass>
@@ -11031,7 +11034,7 @@ Name = "Inteliheader1"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_4F00V1ZEN</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>txtinteligrid</class>
 		<classloc>..\classes\inteligrid.vcx</classloc>
 		<baseclass>textbox</baseclass>
@@ -11115,7 +11118,7 @@ Name = "Inteliheader1"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_4F00VU1IG</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>txtinteligrid</class>
 		<classloc>..\classes\inteligrid.vcx</classloc>
 		<baseclass>textbox</baseclass>
@@ -11199,7 +11202,7 @@ Name = "Inteliheader1"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_4F00VU1IH</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>txtinteligrid</class>
 		<classloc>..\classes\inteligrid.vcx</classloc>
 		<baseclass>textbox</baseclass>
@@ -11641,7 +11644,7 @@ Name = "Inteliheader1"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_55V0MJVYY</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>txtinteligrid</class>
 		<classloc>..\classes\inteligrid.vcx</classloc>
 		<baseclass>textbox</baseclass>
@@ -11939,7 +11942,7 @@ Name = "Inteliheader1"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_5NA10VNW9</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>textbox</class>
 		<classloc/>
 		<baseclass>textbox</baseclass>
@@ -12164,7 +12167,7 @@ Name = "Inteliheader1"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_5NA10VNWF</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>textbox</class>
 		<classloc/>
 		<baseclass>textbox</baseclass>
@@ -12269,7 +12272,7 @@ Name = "Inteliheader1"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_5NG0L6Q7D</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>textbox</class>
 		<classloc/>
 		<baseclass>textbox</baseclass>
@@ -12354,7 +12357,7 @@ Name = "Inteliheader1"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_5NG0L6Q7F</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>textbox</class>
 		<classloc/>
 		<baseclass>textbox</baseclass>
@@ -12439,7 +12442,7 @@ Name = "Inteliheader1"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_5UY100M9L</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>textbox</class>
 		<classloc/>
 		<baseclass>textbox</baseclass>
@@ -12544,7 +12547,7 @@ Name = "Inteliheader1"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_5UY100M9N</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>textbox</class>
 		<classloc/>
 		<baseclass>textbox</baseclass>
@@ -12649,7 +12652,7 @@ Name = "Inteliheader1"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_5UY100M9P</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>textbox</class>
 		<classloc/>
 		<baseclass>textbox</baseclass>
@@ -12754,7 +12757,7 @@ Name = "Inteliheader1"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_5UY100M9R</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>textbox</class>
 		<classloc/>
 		<baseclass>textbox</baseclass>
@@ -12859,7 +12862,7 @@ Name = "Inteliheader1"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_5UY100M9T</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>textbox</class>
 		<classloc/>
 		<baseclass>textbox</baseclass>
@@ -12964,7 +12967,7 @@ Name = "Inteliheader1"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_5UY100M9V</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>textbox</class>
 		<classloc/>
 		<baseclass>textbox</baseclass>
@@ -13070,7 +13073,7 @@ Name = "Inteliheader1"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_5UY100M9X</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>textbox</class>
 		<classloc/>
 		<baseclass>textbox</baseclass>
@@ -13175,7 +13178,7 @@ Name = "Inteliheader1"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_5UY100M9Z</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>textbox</class>
 		<classloc/>
 		<baseclass>textbox</baseclass>
@@ -13280,7 +13283,7 @@ Name = "Inteliheader1"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_5UY157G0I</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>textbox</class>
 		<classloc/>
 		<baseclass>textbox</baseclass>
@@ -13363,7 +13366,7 @@ Name = "Inteliheader1"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_5UY157G0K</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>textbox</class>
 		<classloc/>
 		<baseclass>textbox</baseclass>
@@ -13446,7 +13449,7 @@ Name = "Inteliheader1"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_5UY157G0M</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>textbox</class>
 		<classloc/>
 		<baseclass>textbox</baseclass>
@@ -13529,7 +13532,7 @@ Name = "Inteliheader1"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_5UY157G0O</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>textbox</class>
 		<classloc/>
 		<baseclass>textbox</baseclass>
@@ -13612,7 +13615,7 @@ Name = "Inteliheader1"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_5UY157G0Q</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>textbox</class>
 		<classloc/>
 		<baseclass>textbox</baseclass>
@@ -13695,7 +13698,7 @@ Name = "Inteliheader1"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_5UY157G0S</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>textbox</class>
 		<classloc/>
 		<baseclass>textbox</baseclass>
@@ -13778,7 +13781,7 @@ Name = "Inteliheader1"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_5UY157G0U</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>textbox</class>
 		<classloc/>
 		<baseclass>textbox</baseclass>
@@ -13861,7 +13864,7 @@ Name = "Inteliheader1"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_5UY157G0W</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>textbox</class>
 		<classloc/>
 		<baseclass>textbox</baseclass>
@@ -14995,6 +14998,65 @@ Name = "Text1"
 	</record>
 	<record>
 		<platform>WINDOWS</platform>
+		<uniqueid>_6MI0IAZAI</uniqueid>
+		<timestamp>1454982159</timestamp>
+		<class>inteliheader</class>
+		<classloc/>
+		<baseclass>header</baseclass>
+		<objname>Inteliheader1</objname>
+		<parent>FRMCOMPRAS_PEDIDO_ANALISE.pageframe.Page2.gridorder1.Intelicolumn97</parent>
+		<properties>Caption = "Teste"
+Name = "Inteliheader1"
+</properties>
+		<protected/>
+		<methods/>
+		<objcode/>
+		<ole/>
+		<ole2/>
+		<reserved1/>
+		<reserved2/>
+		<reserved3/>
+		<reserved4/>
+		<reserved5/>
+		<reserved6/>
+		<reserved7/>
+		<reserved8/>
+		<user/>
+	</record>
+	<record>
+		<platform>WINDOWS</platform>
+		<uniqueid>_6MI0IAZAJ</uniqueid>
+		<timestamp>1454982159</timestamp>
+		<class>textbox</class>
+		<classloc/>
+		<baseclass>textbox</baseclass>
+		<objname>Text1</objname>
+		<parent>FRMCOMPRAS_PEDIDO_ANALISE.pageframe.Page2.gridorder1.Intelicolumn97</parent>
+		<properties>BorderStyle = 0
+Margin = 0
+ForeColor = 0,0,0
+BackColor = 255,255,255
+SelectedForeColor = 255,255,255
+SelectedBackColor = 58,110,165
+Name = "Text1"
+</properties>
+		<protected/>
+		<methods/>
+		<objcode/>
+		<ole/>
+		<ole2/>
+		<reserved1/>
+		<reserved2/>
+		<reserved3/>
+		<reserved4/>
+		<reserved5/>
+		<reserved6/>
+		<reserved7/>
+		<reserved8/>
+		<user/>
+	</record>
+	<record>
+		<platform>WINDOWS</platform>
 		<uniqueid>_1RG0Y51PZ</uniqueid>
 		<timestamp>1323061432</timestamp>
 		<class>shape_</class>
@@ -15306,7 +15368,7 @@ Name = "lblResumo"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_1RG0Y51PZ</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>checkbox_</class>
 		<classloc>..\classes\objetos.vcx</classloc>
 		<baseclass>checkbox</baseclass>
@@ -15369,7 +15431,7 @@ ENDPROC
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_1RG0Y51PZ</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>spinner_</class>
 		<classloc>..\classes\objetos.vcx</classloc>
 		<baseclass>spinner</baseclass>
@@ -15438,7 +15500,7 @@ Name = "Label_11"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_24N10FEAH</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>cmdbase</class>
 		<classloc>..\classes\botoes.vcx</classloc>
 		<baseclass>commandbutton</baseclass>
@@ -15550,7 +15612,7 @@ Name = "Label_2"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_24N10FE9W</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>textbox_</class>
 		<classloc>..\classes\objetos.vcx</classloc>
 		<baseclass>textbox</baseclass>
@@ -15591,7 +15653,7 @@ ENDPROC
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_24N10FEAI</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>cmdbase</class>
 		<classloc>..\classes\botoes.vcx</classloc>
 		<baseclass>commandbutton</baseclass>
@@ -15845,7 +15907,7 @@ Name = "Label_shape4"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_24N10FEA4</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>textbox_</class>
 		<classloc>..\classes\objetos.vcx</classloc>
 		<baseclass>textbox</baseclass>
@@ -15982,7 +16044,7 @@ Name = "Label_1"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_1RG0Y51Q0</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>textbox_</class>
 		<classloc>..\classes\objetos.vcx</classloc>
 		<baseclass>textbox</baseclass>
@@ -16067,7 +16129,7 @@ Name = "Label_5"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_24Q0KKE5K</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>textbox_</class>
 		<classloc>..\classes\objetos.vcx</classloc>
 		<baseclass>textbox</baseclass>
@@ -16298,6 +16360,87 @@ Name = "Label_12"
 	</record>
 	<record>
 		<platform>WINDOWS</platform>
+		<uniqueid>_59V0LVUFL</uniqueid>
+		<timestamp>1292980627</timestamp>
+		<class>label_</class>
+		<classloc>..\classes\objetos.vcx</classloc>
+		<baseclass>label</baseclass>
+		<objname>Label_20</objname>
+		<parent>FRMCOMPRAS_PEDIDO_ANALISE.pageframe.Page2</parent>
+		<properties>Caption = "Q\&lt;td na embalagem:"
+Left = 569
+Top = 441
+Visible = .F.
+TabIndex = 21
+ZOrderSet = 42
+resizelock = WHL
+Name = "Label_20"
+</properties>
+		<protected/>
+		<methods/>
+		<objcode/>
+		<ole/>
+		<ole2/>
+		<reserved1/>
+		<reserved2/>
+		<reserved3/>
+		<reserved4/>
+		<reserved5/>
+		<reserved6/>
+		<reserved7/>
+		<reserved8/>
+		<user/>
+	</record>
+	<record>
+		<platform>WINDOWS</platform>
+		<uniqueid>_59V0LVUFM</uniqueid>
+		<timestamp>1454982159</timestamp>
+		<class>textbox_</class>
+		<classloc>..\classes\objetos.vcx</classloc>
+		<baseclass>textbox</baseclass>
+		<objname>txtQtdEmbalagem02</objname>
+		<parent>FRMCOMPRAS_PEDIDO_ANALISE.pageframe.Page2</parent>
+		<properties>ControlSource = "curListaProd.qtd_embalagem"
+Height = 21
+Left = 666
+TabIndex = 22
+ToolTipText = "Quantidade contida na embalagem do produto"
+Top = 436
+Visible = .F.
+Width = 65
+ZOrderSet = 43
+resizelock = WHL
+Name = "txtQtdEmbalagem02"
+</properties>
+		<protected/>
+		<methods>PROCEDURE GotFocus
+this.Parent.Tag = Str(this.value,12,2)
+ENDPROC
+PROCEDURE LostFocus
+If ! this.Parent.Tag == Str(this.value,12,2) &amp;&amp;And 6 = Messagebox("Deseja alterar o valor de compra também no cadastro do produto?",32+4,"Informação")
+oProd = Createobject([db_produtos])
+oProd.Atualizarcampo(curListaProd.Id,'qtd_embalagem',this.value)
+Release oProd
+Endif
+DoDefault()
+
+ENDPROC
+</methods>
+		<objcode/>
+		<ole/>
+		<ole2/>
+		<reserved1/>
+		<reserved2/>
+		<reserved3/>
+		<reserved4/>
+		<reserved5/>
+		<reserved6/>
+		<reserved7/>
+		<reserved8/>
+		<user/>
+	</record>
+	<record>
+		<platform>WINDOWS</platform>
 		<uniqueid>_1RG0Y51PZ</uniqueid>
 		<timestamp>1323061432</timestamp>
 		<class>label_</class>
@@ -16331,7 +16474,7 @@ Name = "Label_13"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_1RG0Y51PZ</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>textbox_</class>
 		<classloc>..\classes\objetos.vcx</classloc>
 		<baseclass>textbox</baseclass>
@@ -16393,38 +16536,6 @@ TabIndex = 35
 ZOrderSet = 44
 resizelock = WHL
 Name = "Label_shape5"
-</properties>
-		<protected/>
-		<methods/>
-		<objcode/>
-		<ole/>
-		<ole2/>
-		<reserved1/>
-		<reserved2/>
-		<reserved3/>
-		<reserved4/>
-		<reserved5/>
-		<reserved6/>
-		<reserved7/>
-		<reserved8/>
-		<user/>
-	</record>
-	<record>
-		<platform>WINDOWS</platform>
-		<uniqueid>_5IO0KFGC1</uniqueid>
-		<timestamp>1323061709</timestamp>
-		<class>label_</class>
-		<classloc>..\classes\objetos.vcx</classloc>
-		<baseclass>label</baseclass>
-		<objname>Label_21</objname>
-		<parent>FRMCOMPRAS_PEDIDO_ANALISE.pageframe.Page2</parent>
-		<properties>Caption = "Litragem:"
-Left = 551
-Top = 406
-TabIndex = 40
-ZOrderSet = 45
-resizelock = WHL
-Name = "Label_21"
 </properties>
 		<protected/>
 		<methods/>
@@ -16579,42 +16690,6 @@ Name = "txtTotal"
 	</record>
 	<record>
 		<platform>WINDOWS</platform>
-		<uniqueid>_5IO0KFGC2</uniqueid>
-		<timestamp>1323061568</timestamp>
-		<class>txtlabel</class>
-		<classloc>..\classes\objetos.vcx</classloc>
-		<baseclass>textbox</baseclass>
-		<objname>txtLitragem</objname>
-		<parent>FRMCOMPRAS_PEDIDO_ANALISE.pageframe.Page2</parent>
-		<properties>FontBold = .T.
-Alignment = 1
-Height = 16
-InputMask = "9999999.99"
-Left = 586
-TabIndex = 41
-Top = 406
-Width = 80
-ZOrderSet = 50
-resizelock = WHL
-Name = "txtLitragem"
-</properties>
-		<protected/>
-		<methods/>
-		<objcode/>
-		<ole/>
-		<ole2/>
-		<reserved1/>
-		<reserved2/>
-		<reserved3/>
-		<reserved4/>
-		<reserved5/>
-		<reserved6/>
-		<reserved7/>
-		<reserved8/>
-		<user/>
-	</record>
-	<record>
-		<platform>WINDOWS</platform>
 		<uniqueid>_1RG0Y51Q0</uniqueid>
 		<timestamp>1323061432</timestamp>
 		<class>txtlabel</class>
@@ -16723,7 +16798,7 @@ Name = "Label_16"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_1RG0Y51PZ</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>textbox_</class>
 		<classloc>..\classes\objetos.vcx</classloc>
 		<baseclass>textbox</baseclass>
@@ -16760,7 +16835,7 @@ ENDPROC
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_1RG0Y51Q0</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>textbox_</class>
 		<classloc>..\classes\objetos.vcx</classloc>
 		<baseclass>textbox</baseclass>
@@ -16800,7 +16875,7 @@ ENDPROC
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_1RG0Y51Q0</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>textbox_</class>
 		<classloc>..\classes\objetos.vcx</classloc>
 		<baseclass>textbox</baseclass>
@@ -16839,7 +16914,7 @@ ENDPROC
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_3FV0XZ3T4</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>textbox_</class>
 		<classloc>..\classes\objetos.vcx</classloc>
 		<baseclass>textbox</baseclass>
@@ -16879,7 +16954,7 @@ ENDPROC
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_2U6106TJ9</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>commandbutton_</class>
 		<classloc>..\classes\objetos.vcx</classloc>
 		<baseclass>commandbutton</baseclass>
@@ -16957,7 +17032,7 @@ ENDPROC
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_1RG0Y51PZ</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>commandbutton_</class>
 		<classloc>..\classes\objetos.vcx</classloc>
 		<baseclass>commandbutton</baseclass>
@@ -17001,7 +17076,7 @@ ENDPROC
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_41E0LAP75</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>commandbutton_</class>
 		<classloc>..\classes\objetos.vcx</classloc>
 		<baseclass>commandbutton</baseclass>
@@ -17046,7 +17121,7 @@ ENDPROC
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_1RG0Y51PZ</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>commandbutton_</class>
 		<classloc>..\classes\objetos.vcx</classloc>
 		<baseclass>commandbutton</baseclass>
@@ -17091,7 +17166,7 @@ ENDPROC
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_3WK0M67EM</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>commandbutton_</class>
 		<classloc>..\classes\objetos.vcx</classloc>
 		<baseclass>commandbutton</baseclass>
@@ -17142,7 +17217,7 @@ ENDPROC
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_2P80WBJW6</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>cmdsalvar</class>
 		<classloc>..\classes\botoes.vcx</classloc>
 		<baseclass>commandbutton</baseclass>
@@ -17232,7 +17307,7 @@ ENDPROC
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_24V0XLYJC</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>commandbutton_</class>
 		<classloc>..\classes\objetos.vcx</classloc>
 		<baseclass>commandbutton</baseclass>
@@ -17276,7 +17351,7 @@ ENDPROC
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_1RG0Y51PZ</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>cmdsair</class>
 		<classloc>..\classes\botoes.vcx</classloc>
 		<baseclass>commandbutton</baseclass>
@@ -17316,7 +17391,7 @@ ENDPROC
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_24N10FEAC</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>commandbutton_</class>
 		<classloc>..\classes\objetos.vcx</classloc>
 		<baseclass>commandbutton</baseclass>
@@ -17354,7 +17429,7 @@ ENDPROC
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_1RG0Y51PZ</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>cmdsalvar</class>
 		<classloc>..\classes\botoes.vcx</classloc>
 		<baseclass>commandbutton</baseclass>
@@ -17509,7 +17584,7 @@ ENDPROC
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_24N10FEAA</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>commandbutton_</class>
 		<classloc>..\classes\objetos.vcx</classloc>
 		<baseclass>commandbutton</baseclass>
@@ -17567,7 +17642,7 @@ ENDPROC
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_3UG0IQ6SS</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>cmdsalvar</class>
 		<classloc>..\classes\botoes.vcx</classloc>
 		<baseclass>commandbutton</baseclass>
@@ -17607,7 +17682,7 @@ ENDPROC
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_1RG0Y51PZ</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>commandbutton_</class>
 		<classloc>..\classes\objetos.vcx</classloc>
 		<baseclass>commandbutton</baseclass>
@@ -17656,7 +17731,7 @@ ENDPROC
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_1RG0Y51PZ</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>commandbutton_</class>
 		<classloc>..\classes\objetos.vcx</classloc>
 		<baseclass>commandbutton</baseclass>
@@ -17707,7 +17782,7 @@ ENDPROC
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_1RG0Y51PZ</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>commandbutton_</class>
 		<classloc>..\classes\objetos.vcx</classloc>
 		<baseclass>commandbutton</baseclass>
@@ -17822,7 +17897,7 @@ ENDPROC
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_1RG0Y51PZ</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>commandbutton_</class>
 		<classloc>..\classes\objetos.vcx</classloc>
 		<baseclass>commandbutton</baseclass>
@@ -17866,7 +17941,7 @@ ENDPROC
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_3VM0Q7ZK7</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>commandbutton_</class>
 		<classloc>..\classes\objetos.vcx</classloc>
 		<baseclass>commandbutton</baseclass>
@@ -17912,7 +17987,7 @@ ENDPROC
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_1RG0Y51PZ</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>commandbutton_</class>
 		<classloc>..\classes\objetos.vcx</classloc>
 		<baseclass>commandbutton</baseclass>
@@ -17994,21 +18069,20 @@ Name = "Label_shape1"
 	</record>
 	<record>
 		<platform>WINDOWS</platform>
-		<uniqueid>_59V0LVUFL</uniqueid>
-		<timestamp>1292980627</timestamp>
+		<uniqueid>_5IO0KFGC1</uniqueid>
+		<timestamp>1323061709</timestamp>
 		<class>label_</class>
 		<classloc>..\classes\objetos.vcx</classloc>
 		<baseclass>label</baseclass>
-		<objname>Label_20</objname>
+		<objname>Label_21</objname>
 		<parent>FRMCOMPRAS_PEDIDO_ANALISE.pageframe.Page2</parent>
-		<properties>Caption = "Q\&lt;td na embalagem:"
-Left = 569
-Top = 441
-Visible = .F.
-TabIndex = 21
-ZOrderSet = 42
+		<properties>Caption = "Litragem:"
+Left = 551
+Top = 406
+TabIndex = 40
+ZOrderSet = 45
 resizelock = WHL
-Name = "Label_20"
+Name = "Label_21"
 </properties>
 		<protected/>
 		<methods/>
@@ -18027,39 +18101,27 @@ Name = "Label_20"
 	</record>
 	<record>
 		<platform>WINDOWS</platform>
-		<uniqueid>_59V0LVUFM</uniqueid>
-		<timestamp>1420583287</timestamp>
-		<class>textbox_</class>
+		<uniqueid>_5IO0KFGC2</uniqueid>
+		<timestamp>1323061568</timestamp>
+		<class>txtlabel</class>
 		<classloc>..\classes\objetos.vcx</classloc>
 		<baseclass>textbox</baseclass>
-		<objname>txtQtdEmbalagem02</objname>
+		<objname>txtLitragem</objname>
 		<parent>FRMCOMPRAS_PEDIDO_ANALISE.pageframe.Page2</parent>
-		<properties>ControlSource = "curListaProd.qtd_embalagem"
-Height = 21
-Left = 666
-TabIndex = 22
-ToolTipText = "Quantidade contida na embalagem do produto"
-Top = 436
-Visible = .F.
-Width = 65
-ZOrderSet = 43
+		<properties>FontBold = .T.
+Alignment = 1
+Height = 16
+InputMask = "9999999.99"
+Left = 586
+TabIndex = 41
+Top = 406
+Width = 80
+ZOrderSet = 50
 resizelock = WHL
-Name = "txtQtdEmbalagem02"
+Name = "txtLitragem"
 </properties>
 		<protected/>
-		<methods>PROCEDURE GotFocus
-this.Parent.Tag = Str(this.value,12,2)
-ENDPROC
-PROCEDURE LostFocus
-If ! this.Parent.Tag == Str(this.value,12,2) &amp;&amp;And 6 = Messagebox("Deseja alterar o valor de compra também no cadastro do produto?",32+4,"Informação")
-oProd = Createobject([db_produtos])
-oProd.Atualizarcampo(curListaProd.Id,'qtd_embalagem',this.value)
-Release oProd
-Endif
-DoDefault()
-
-ENDPROC
-</methods>
+		<methods/>
 		<objcode/>
 		<ole/>
 		<ole2/>
@@ -18076,7 +18138,7 @@ ENDPROC
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_1RG0Y51PZ</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>checkbox_</class>
 		<classloc>..\classes\objetos.vcx</classloc>
 		<baseclass>checkbox</baseclass>
@@ -18151,7 +18213,7 @@ Name = "Label_1"
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_1RG0Y51PZ</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>checkbox_</class>
 		<classloc>..\classes\objetos.vcx</classloc>
 		<baseclass>checkbox</baseclass>
@@ -18197,7 +18259,7 @@ ENDPROC
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_1RG0Y51PZ</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>checkbox_</class>
 		<classloc>..\classes\objetos.vcx</classloc>
 		<baseclass>checkbox</baseclass>
@@ -18243,7 +18305,7 @@ ENDPROC
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_4DF0XT63A</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>checkbox_</class>
 		<classloc>..\classes\objetos.vcx</classloc>
 		<baseclass>checkbox</baseclass>
@@ -18289,7 +18351,7 @@ ENDPROC
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_4RM0ZN3GI</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>checkbox_</class>
 		<classloc>..\classes\objetos.vcx</classloc>
 		<baseclass>checkbox</baseclass>
@@ -18330,7 +18392,7 @@ ENDPROC
 	<record>
 		<platform>WINDOWS</platform>
 		<uniqueid>_5NP12D2EF</uniqueid>
-		<timestamp>1420583287</timestamp>
+		<timestamp>1454982159</timestamp>
 		<class>cmdbase</class>
 		<classloc>..\classes\botoes.vcx</classloc>
 		<baseclass>commandbutton</baseclass>
@@ -18402,7 +18464,7 @@ ENDPROC
 		<parent/>
 		<properties>Arial, 0, 9, 5, 15, 12, 32, 3, 0
 Tahoma, 0, 8, 5, 13, 11, 27, 2, 0
-Tahoma, 1, 8, 6, 13, 11, 32, 2, 0
+Tahoma, 0, 7, 4, 11, 9, 22, 2, 0
 </properties>
 		<protected/>
 		<methods/>
